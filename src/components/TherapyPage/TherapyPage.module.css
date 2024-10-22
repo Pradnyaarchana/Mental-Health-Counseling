@@ -1,0 +1,26 @@
+
+.therapyPage { 
+  background-color: #e0eae9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.therapistGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1332px;
+  margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+  .therapistGrid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}

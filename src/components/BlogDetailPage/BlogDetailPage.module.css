@@ -1,0 +1,22 @@
+.blogDetail{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+.blogimage{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+ 
+.container{
+    margin: 50px;
+    padding: 20px;
+}
+
+p{
+    font-size: 22px;
+}
+.blogTitle{
+    font-size: 40px;
+}

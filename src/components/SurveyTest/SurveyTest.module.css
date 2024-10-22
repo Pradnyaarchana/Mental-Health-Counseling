@@ -1,0 +1,74 @@
+/* Styles for the survey form */
+.surveyTest {
+  background-color: #e0eae9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.surveyContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.questionText {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.optionsContainer,
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.optionText {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.inputElement {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkboxContainer .inputElement {
+  accent-color: #0c2548; /* Custom style for checkboxes */
+}
+
+.radioContainer .inputElement {
+  accent-color: #0c2548; /* Custom style for radio buttons */
+}
+
+.submitButton {
+  background-color: #0c2548;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submitButton:hover {
+  background-color: #094078;
+}
+
+.inputOption {
+  margin-right: 10px;
+}

@@ -1,0 +1,81 @@
+.therapyPage{
+  background-color: #0c2548;
+}
+.therapistCard {
+  background-color: #fffcfc;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+} 
+
+.therapistImage {
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.therapistInfo {
+  display: flex;
+  flex-direction: column;
+  font-family: "Instrument Sans", -apple-system, Roboto, Helvetica, sans-serif;
+  color: #000;
+}
+
+.therapistName {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.therapistQualification,
+.therapistRole,
+.therapistLanguages,
+.therapistAvailability,
+.therapistExperience,
+.therapistLocation {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.therapistRole {
+  color: #357c53;
+  font-weight: 600;
+}
+
+.bookAppointment {
+  border-radius: 5px;
+  background-color: #0c2548;
+  font-family: "Istok Web", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  padding: 16px 24px;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
+@media (max-width: 991px) {
+  .therapistCard {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .therapistImage {
+    margin-bottom: 20px;
+  }
+
+  .therapistInfo {
+    align-items: center;
+    text-align: center;
+  }
+
+  .bookAppointment {
+    align-self: center;
+  }
+}

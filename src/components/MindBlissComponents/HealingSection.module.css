@@ -1,0 +1,134 @@
+
+
+ .healingSection {
+  background-color: #0c2548;
+  padding: 30px 39px;
+  color: #fff;
+  position:relative;
+  overflow:hidden;
+
+}
+
+.contentWrapper {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.textContent {
+  flex: 0 0 70%;
+  padding-right: 20px;
+}
+
+.title {
+  font: 400 64px/67px "Lexend", sans-serif;;
+  margin-bottom: 47px;
+}
+
+.description {
+  font: 400 24px "Lexend", sans-serif;
+}
+.breatheWidget {
+  position: relative;
+  width: 200px; /* Size of the box */
+  height: 200px;
+  border: 5px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.breatheCircle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0c2548;
+  border: 5px solid #fff;
+  animation: moveAlongEdge 16s infinite linear;
+}
+
+/* Breathing circle animation */
+@keyframes moveAlongEdge {
+  0% {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%); /* Ensures the center of the circle is on the edge */
+  }
+  25% {
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%); /* Top-right corner */
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%); /* Bottom-right corner */
+  }
+  75% {
+    top: 100%;
+    left: 0;
+    transform: translate(-50%, -50%); /* Bottom-left corner */
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%); /* Back to the top-left */
+  }
+}
+
+.breatheText {
+  font: 700 32px "Istok Web", sans-serif;
+  text-align: center;
+  z-index: 1; /* Ensure text stays above the moving circle */
+  margin-top: 20px;
+  color: #fff;
+}
+.backgroundImage {
+  width: 100%;
+  margin-top: 160px;
+}
+
+.mindfulnessImage {
+  width: 581px;
+  max-width: 100%;
+  margin: 293px auto -37px;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .healingSection {
+    padding: 100px 20px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .textContent,
+  .breatheWidget {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .breatheWidget {
+    margin-top: 40px;
+    padding: 0 20px 100px;
+  }
+
+  .backgroundImage {
+    margin-top: 40px;
+  }
+
+  .mindfulnessImage {
+    margin: 40px auto 10px;
+  }
+}
